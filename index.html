@@ -2,15 +2,7 @@
 <html>
 <head>
  <!-- bienvenida -->
-<div id="bienvenida">
-  <h2>👋 ¡Hola! Bienvenido a FixSaTec</h2>
-  <p>Estos son los comandos que puedes usar:</p>
-  <ul>
-    <li><strong>📌 Diagnóstico:</strong> Revisar problemas comunes.</li>
-    <li><strong>🔧 Soporte:</strong> Contactar a un técnico.</li>
-    <li><strong>ℹ️ Información:</strong> Conocer más sobre la app.</li>
-  </ul>
-</div>
+
 
   
   
@@ -26,9 +18,16 @@
 <body>
   <!-- Tu contenido -->
 
-  <div class="container">
-    <h1>⚙️ Herramientas Fixsatec</h1>
-    <p>Bienvenido a nuestra Mini App. ¡Gracias por apoyar el canal!</p>
+  <div class="bienvenida">
+  <h2>👋 ¡Hola, bienvenido a FixSaTec!</h2>
+  <p>¿Qué deseas hacer hoy? Elige una opción:</p>
+  <ul>
+    <li><button onclick="diagnostico()">📌 Diagnóstico</button></li>
+    <li><button onclick="soporte()">🔧 Soporte Técnico</button></li>
+    <li><button onclick="info()">ℹ️ Información</button></li>
+  </ul>
+</div>
+
 
     <!-- Zona de anuncio (SDK de Monetag ya debe estar en <head>) -->
     <button onclick="mostrarAnuncio()">🎁 Ver anuncio</button>
