@@ -24,10 +24,18 @@
   <script src="script.js"></script>
 
 <!-- Botón para ver cursos en YouTube -->
-    <button onclick="window.open('https://www.youtube.com/playlist?list=PLmJ1GOxAC0LA2v1spxpKowo-btc6tLGBu', '_blank')">
-      🎓 Ver cursos de reparación
-    </button>
-  </div>
+    <button onclick="abrirYoutube()">🎓 Ver cursos de reparación</button>
+
+<script>
+function abrirYoutube() {
+  const url = 'https://www.youtube.com/playlist?list=TU_ID_DE_PLAYLIST';
+  window.open(url, '_blank'); // Forza abrir en navegador externo
+  setTimeout(() => {
+    window.Telegram.WebApp.close(); // Cierra la miniapp opcionalmente
+  }, 1000);
+}
+</script>
+
 
 </body>
 </html>
